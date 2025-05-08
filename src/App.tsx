@@ -15,7 +15,6 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    this.setState({ pressedKey: 'Nothing was pressed yet' });
     document.removeEventListener('keyup', this.handleKeyUp);
   }
 
